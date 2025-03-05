@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Масиви</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <form>
+    <div class="input-results pull-left">
+      <h2>Значення та результат</h2>
+      <label>
+        Введіть значення
+        <input type="text" id="user-input" value="1, 2, 3, 5, 8">
+      </label>
+      <div>Масив: <span id="curr-array">[]</span></div>
+      <hr>
+      <div>Результат: <span id="action-result"></span></div>
+    </div>
+    <div class="actions pull-left">
+      <h2>Оберіть дію</h2>
+      <button type="button" data-action="fix">Зафіксувати значення</button>
+      <button type="button" data-action="reset">Очистити масив</button>
+      <button type="button" data-action="max">Розрахувати (макс)</button>
+      <button type="button" data-action="min">Розрахувати (мін)</button>
+      <button type="button" data-action="delete-highest">Видалити найбільший елемент</button>
+      <button type="button" data-action="delete-lowest">Видалити найменший елемент</button>
+      <button type="button" data-action="sum">Знайти суму чисел в масиві</button>
+      <button type="button" data-action="count-positive-nums">Кількість позитивних чисел</button>
+      <button type="button" data-action="count-negative-nums">Кількість негативних чисел</button>
+      <button type="button" data-action="is-number">Чи є число?</button>
+    </div>
+  </form>
+</div>
+<script src="scripts.js" type="text/javascript"></script>
+</body>
+</html>
