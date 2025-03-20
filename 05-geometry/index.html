@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Геометрія</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <form>
+    <div class="inputs">
+      <input type="text" id="width" placeholder="Ширина"> x <input type="text" id="height" placeholder="Висота">
+    </div>
+    <div class="buttons">
+      <button type="button" class="action" id="make-rectangle-btn">Згенерувати прямокутник</button>
+      <button type="button" class="action" id="calc-perimeter-btn">Порахувати периметр</button>
+      <button type="button" class="action" id="calc-square-btn">Порахувати площу</button>
+      <button type="button" id="reset-input-values-btn">Скинути значення</button>
+    </div>
+  </form>
+  <div id="text-info"></div>
+  <div class="figure-wrapper">
+    <div id="figure-result"></div>
+  </div>
+</div>
+<script src="scripts.js" type="text/javascript"></script>
+</body>
+</html>

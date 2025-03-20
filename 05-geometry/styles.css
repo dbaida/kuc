@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+input {
+    width: 100px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container {
+    width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+}
+
+button.action {
+    background-color: #00ACC1;
+    color: #fff;
+    border: 1px solid #e7e7e7;
+}
+
+button.action:hover {
+    background-color: #007685;
+}
+
+input.error {
+    border: 1px solid #f48888;
+}
+
+.buttons {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#figure-result {
+    background-color: coral;
+    transition: all 0.3s ease-in-out;
+}
+
+.figure-wrapper {
+    overflow: hidden;
+}
