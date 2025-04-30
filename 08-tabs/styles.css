@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', serif;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #5f5f5f;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.container {
+    background-color: #2c2c2c;
+    width: 800px;
+    margin: 50px auto;
+    padding: 16px;
+    border: 1px solid #5c5c5c;
+}
+
+.tab-nav {
+    display: flex;
+}
+
+.tab-nav li {
+    padding: 8px 16px;
+    cursor: pointer;
+    color: #ccc;
+    transition: background-color 0.3s;
+}
+
+.tab-nav li:hover {
+    background-color: #fff;
+    color: #b12704;
+}
+
+.tab-nav li.active {
+    font-weight: bold;
+    background-color: #fff;
+    color: #b12704;
+    cursor: default;
+}
+
+.tab-content {
+    display: none;
+    background-color: #fff;
+    padding: 8px 16px;
+    text-align: justify;
+    color: #999;
+    line-height: 24px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tabs.fixed .tab-content {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.sep {
+    margin: 24px 0;
+    border-color: #666;
+}
