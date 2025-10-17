@@ -1,0 +1,31 @@
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: $primary-color;
+  color: $white-color;
+  font-size: $base-font-size;
+  cursor: pointer;
+  transition: background-color $transition-speed ease;
+
+  &:hover {
+    background-color: $primary-hover-color;
+  }
+
+  &--secondary {
+    background-color: $secondary-color;
+
+    &:hover {
+      background-color: $secondary-hover-color;
+    }
+  }
+
+  &--disabled {
+    background-color: $disabled-color;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: $disabled-color;
+    }
+  }
+}
