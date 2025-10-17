@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.card-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-list__item {
+    flex-basis: 350px;
+    display: flex;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.card__image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.card__content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card__description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.card__actions {
+    display: flex;
+    gap: 10px;
+}
+
+.card--discount {
+    background-color: #fffbe6;
+    border-color: #ffe58f;
+}
+
+.card--accent {
+    border-left: 5px solid #1890ff;
+}
+
+.card__badge {
+    position: absolute;
+    top: 10px;
+    left: -1px;
+    background-color: #ff4d4f;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 0 4px 4px 0;
+    font-weight: bold;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button--secondary {
+    background-color: #6c757d;
+}
+
+.button--secondary:hover {
+    background-color: #5a6268;
+}
+
+.button--disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+}
+
+.button--disabled:hover {
+    background-color: #c0c0c0;
+}
+
+@media (max-width: 768px) {
+    .card-list__item {
+        flex-basis: 100%;
+    }
+}
