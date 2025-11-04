@@ -1,0 +1,57 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+
+// Overlay gradients
+$overlay-gradient-start: rgba(0, 0, 0, 0.65);
+$overlay-gradient-end: transparent;
+$overlay-gradient-hover-start: rgba(0, 0, 0, 0.7);
+
+// Typography
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-size-title: clamp(2rem, 5vw, 3rem);
+$font-size-card-title: clamp(1.25rem, 2.5vw, 1.5rem);
+$font-size-description: 1rem;
+$font-size-cta: 1rem;
+
+$font-weight-bold: 700;
+$font-weight-regular: 400;
+$line-height-title: 1.2;
+$line-height-body: 1.5;
+
+// Spacing
+$spacing-xs: 8px;
+$spacing-sm: 16px;
+$spacing-md: 24px;
+$spacing-lg: 32px;
+$spacing-xl: 48px;
+
+$gap-cards: 24px;
+$gap-mobile: 16px;
+
+// Card dimensions
+$card-height: 420px;
+$card-border-radius: 12px;
+$card-padding: 24px;
+$card-padding-mobile: 20px;
+
+// Transitions
+$transition-duration: 0.25s;
+$transition-easing: ease;
+
+// Shadows
+$card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$card-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.15);
+
+// FAB (Floating Action Button)
+$fab-size: 36px;
+$fab-background: rgba(255, 255, 255, 0.15);
+$fab-backdrop-blur: 2px;
+
+// Container
+$container-max-width: 1200px;
+$container-padding: 24px;
+
+// Breakpoints
+$breakpoint-mobile: 768px;
+
