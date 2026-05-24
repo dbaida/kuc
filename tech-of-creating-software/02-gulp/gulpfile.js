@@ -13,6 +13,9 @@ const stylesDIST = "./dist/css/";           // WHERE we put the result
 const markupSRC  = "./dev/pug/index.pug";
 const markupDIST = "./dist/";
 
+const imagesSRC  = "./dev/img/**/*";   // All files inside dev/img/
+const imagesDIST = "./dist/img/";       // WHERE we put them
+
 // Styles task
 export function styles() {
   return gulp
@@ -25,6 +28,13 @@ export function styles() {
     .pipe(gulp.dest(stylesDIST));            // Save to dist/css/
 }
 
+// Images task — copy as-is, no processing needed
+export function images() {
+  return gulp
+    .src(imagesSRC, { encoding: false }) // encoding:false preserves binary files
+    .pipe(gulp.dest(imagesDIST));         // Copy to dist/img/
+}
+
 // Pug task
 export function markup() {
   return gulp
@@ -34,8 +44,8 @@ export function markup() {
 }
 
 // Running tasks
-// gulp.parallel runs both tasks simultaneously
-export const start = gulp.parallel(styles, markup);
+// gulp.parallel runs all three tasks simultaneously
+export const start = gulp.parallel(styles, markup, images);
 
 // export default — running "gulp" with no arguments will trigger this
 export default start;
